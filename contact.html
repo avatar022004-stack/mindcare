@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MindCare | Get Help & Support</title>
+    <meta name="description"
+        content="Contact MindCare for questions, support, or to get started with online therapy. We're here to help you every step of the way.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" fill="url(#gradient1)" />
+                        <path
+                            d="M20 10C14.5 10 10 14.5 10 20V26C10 27.1 10.9 28 12 28C13.1 28 14 27.1 14 26V20C14 16.7 16.7 14 20 14C23.3 14 26 16.7 26 20V26C26 27.1 26.9 28 28 28C29.1 28 30 27.1 30 26V20C30 14.5 25.5 10 20 10Z"
+                            fill="white" />
+                        <defs>
+                            <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#2D5F5D" />
+                                <stop offset="100%" stop-color="#4A8B88" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">MindCare</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn-outline">Log In</a>
+                    <a href="signup.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="page-hero">
+        <div class="page-hero-background"></div>
+        <div class="container">
+            <h1 class="page-hero-title">Get in Touch</h1>
+            <p class="page-hero-subtitle">We're here to answer your questions and help you get started</p>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="contact-options">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3 class="contact-card-title">Live Chat</h3>
+                    <p class="contact-card-description">Chat with our support team in real-time</p>
+                    <p class="contact-card-hours">Available 8am-8pm EST, Mon-Fri</p>
+                    <button class="btn btn-outline">Start Chat</button>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-card-title">Email Support</h3>
+                    <p class="contact-card-description">Send us a message anytime</p>
+                    <p class="contact-card-hours">Response within 24 hours</p>
+                    <a href="mailto:support@mindcare.example.com" class="btn btn-outline">Email Us</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-card-title">Phone Support</h3>
+                    <p class="contact-card-description">Speak with a team member</p>
+                    <p class="contact-card-hours">1-800-MINDCARE</p>
+                    <button class="btn btn-outline">Call Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2 class="section-title-left">Send Us a Message</h2>
+                    <p class="form-intro-text">Have a question or need assistance? Fill out the form below and we'll get
+                        back to you within 24 hours.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <select id="subject" name="subject" class="form-input" required>
+                            <option value="">Select a subject</option>
+                            <option value="getting-started">Getting Started</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="therapist">Therapist Matching</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="crisis-banner">
+        <div class="container">
+            <div class="crisis-content">
+                <div class="crisis-icon">⚠️</div>
+                <div class="crisis-text">
+                    <h3 class="crisis-title">In Crisis?</h3>
+                    <p class="crisis-description">
+                        If you're experiencing a mental health emergency, please call <strong>988</strong> (Suicide &
+                        Crisis Lifeline)
+                        or <strong>911</strong>, or go to your nearest emergency room. MindCare is not a crisis service
+                        and does not provide emergency support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq-preview-section">
+        <div class="container">
+            <h2 class="section-title">Quick Answers</h2>
+            <p class="section-subtitle">Looking for immediate answers? Check our FAQ</p>
+
+            <div class="quick-faq">
+                <div class="quick-faq-item">
+                    <h4>How quickly can I start?</h4>
+                    <p>You can be matched with a therapist within 24 hours of signing up.</p>
+                </div>
+                <div class="quick-faq-item">
+                    <h4>What does it cost?</h4>
+                    <p>Plans start at $60/week with financial aid available.</p>
+                </div>
+                <div class="quick-faq-item">
+                    <h4>Is it confidential?</h4>
+                    <p>Yes, all sessions are 100% confidential and HIPAA compliant.</p>
+                </div>
+            </div>
+
+            <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Mental Health Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">For Therapists</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Apply as a Therapist</a></li>
+                        <li><a href="#">Therapist Resources</a></li>
+                        <li><a href="#">Therapist Portal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-disclaimer">
+                    <strong>Crisis Support:</strong> If you are in crisis or having thoughts of suicide, please contact
+                    the National Suicide Prevention Lifeline at 988 or go to your nearest emergency room. MindCare is
+                    not a crisis service.
+                </p>
+                <p class="footer-copyright">© 2026 MindCare. All rights reserved. | 🔒 256-bit SSL Encrypted</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MindCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="auth-section">
+        <div class="auth-background"></div>
+        <div class="auth-card">
+            <div class="auth-logo">
+                <a href="index.html"
+                    style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 36c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16-7.163 16-16 16z"
+                            fill="#2E8B57" />
+                        <path
+                            d="M20 10c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"
+                            fill="#2E8B57" opacity="0.6" />
+                    </svg>
+                    <span
+                        style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-dark);">MindCare</span>
+                </a>
+            </div>
+
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-subtitle">Please sign in to continue your journey</p>
+
+            <form class="auth-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+                </div>
+
+                <div style="text-align: right; margin-bottom: 1.5rem;">
+                    <a href="#" style="color: var(--primary-color); font-size: 0.9rem; text-decoration: none;">Forgot
+                        Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-btn">Sign In</button>
+            </form>
+
+            <div class="auth-divider">
+                <span>or continue with</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button
+                    style="flex: 1; padding: 0.8rem; background: white; border: 1px solid #ddd; border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 500;">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="20"> Google
+                </button>
+            </div>
+
+            <p class="auth-footer">
+                Don't have an account? <a href="signup.html">Sign up</a>
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
